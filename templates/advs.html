@@ -1,0 +1,9 @@
+<p><a href="{%  url 'sensisoft6.views.form_for_adv' category.id %}">Dodaj ogłoszenie:</a></p>
+
+{%  for adv in advs  %}
+    <p><a href="{%  url 'sensisoft6.views.specific_adv' adv.id  %}">{{  adv.charfield  }}</a></p>
+{%  endfor  %}
+
+
+
+

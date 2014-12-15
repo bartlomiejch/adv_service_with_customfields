@@ -1,0 +1,12 @@
+<form action = '/sensisoft6/add_adv/{{  category.id  }}/' method = 'post'>{%  csrf_token  %}
+    <label for='title'>{{  category.name_of_charfield  }}</label>
+    <p><input type="text" name="charfield" id="title"></p>
+	<label for="text">{{  category.name_of_textfield  }}</label>
+	<p><textarea id="text" name="textfield" rows="7" cols="50"></textarea></p>
+	<label for='title'>{{  category.name_of_integerfield  }}</label>
+    <p><input type="text" name="integerfield" id="title"></p>
+    <label><input type="checkbox" name="booleanfield">{{  category.name_of_booleanfield  }}</label>
+	
+
+<button type="submit" >Prześlij</button>
+</form>

@@ -1,0 +1,4 @@
+<h2>Lista kategorii ogłoszeń</h2>
+{%  for category in categories  %}
+    <li><a href="{%  url 'sensisoft6.views.one_category_ads' category.id %}">{{  category.name  }}</a></li>
+{%  endfor  %}
